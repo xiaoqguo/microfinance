@@ -12,5 +12,17 @@ app.controller('mainCrl',function($scope){
     $scope.panelMoreText2='更多产品敬请期待';
 });
 app.controller('applyLoanCrl',function($scope){
-
-})
+    $scope.papers=[
+        {backgroundColor: 'coral'},
+        {backgroundColor: 'transparent'},
+        {backgroundColor: 'transparent'},
+        {backgroundColor: 'transparent'},
+        {backgroundColor: 'transparent'}
+    ];
+    $scope.prePaper=$scope.papers[0];
+    $scope.slideHasChanged=function(index){
+        $scope.papers[index].backgroundColor='coral';
+        $scope.prePaper.backgroundColor='transparent';
+        $scope.prePaper=$scope.papers[index];
+    }
+});
