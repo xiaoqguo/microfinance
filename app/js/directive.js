@@ -1,0 +1,32 @@
+/**
+ * Created by ldjt on 16/10/20.
+ */
+app.directive('microMainCell',function(){
+    return{
+        restrict:'AE',
+        scope:{
+            title:'=',
+            yield:'=',
+            bgImgPath:'=',
+            yieldBottom:'=',
+            desc:'=',
+            ifShowBgImg:'='
+        },
+        controller:function($scope){
+            $scope.ifShowBgImg=true;
+        },
+        transclude:true,
+        templateUrl:'tpls/microMainCell.html'
+    }
+})
+app.directive('microMainPanelDir',function(){
+    return{
+        restrict:'AE',
+        scope:{
+            panelTitle:'=',
+            panelDesc:'='
+        },
+        transclude:true,
+        templateUrl:'tpls/microMainPanel.html'
+    }
+})

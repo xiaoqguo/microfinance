@@ -1,5 +1,14 @@
+.mainBGColor{
+    background-color: coral;
+}
+.mainTextColor{
+    color:coral;
+}
+.grayTextColor{
+    color:gray;;
+}
 .main-header{
-    width:100%;height:120px;display:block;background-color: #11c1f3;
+    width:100%;height:140px;display:block;
 }
 .main-header-title{
     width:100%; height:44px;display: block;
@@ -12,7 +21,14 @@
     padding-left:10px;
 }
 #right{
-    padding-right:10px;
+    padding-right:10px;position: relative;
+}
+.message-img{
+    position: absolute; right:10px; right:12px;top:4px; width:26px;height:22px;
+}
+.message-tag{
+    position: absolute; width:22px;height:12px;color:#ffffff;background-color: red; right:2px;
+    font-size:10px;line-height:12px;text-align: center;border-radius: 6px;
 }
 .main-header-title text{
     color:#ffffff;line-height: 44px;font-size:20px;font-weight:900;
@@ -30,12 +46,15 @@
     justify-content:center;
 }
 .main-header-pane-div-cell{
-    background-color: #33cd5f;
-    width:50px;height:20px;
+    width:38px;
     display:block;
 }
 .main-header-pane-div-cell img{
-    width:50px;
-    height:42px;
+    margin-top:12px;
+    width:38px;
+    height:32px;
     display:block;
+}
+.main-header-pane-div-cell span{
+    text-align: center;line-height:20px;color:#ffffff;width:100%;height:20px;display:block;padding-top:4px;
 }

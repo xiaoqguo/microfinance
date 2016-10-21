@@ -1,0 +1,16 @@
+<c-main-cell style="position: relative">
+    <div style="position: absolute;width:100%;height:100%;display:block;z-index:0">
+        <img ng-show="ifShowBgImg" style="width:100%;height:100%;display:block;" ng-src="{{bgImgPath}}">
+    </div>
+    <div style="position:absolute;width:100%;height:100%;display:block;">
+        <c-title-line>
+            <c-title>{{title}}</c-title>
+            <c-ttiel-right><div ng-transclude></div></c-ttiel-right>
+        </c-title-line>
+        <c-yield-line class="mainTextColor">{{yield}}</c-yield-line>
+        <c-bottom-line>
+            <c-left>{{yieldBottom}}</c-left>
+            <c-right>{{desc}}</c-right>
+        </c-bottom-line>
+    </div>
+</c-main-cell>

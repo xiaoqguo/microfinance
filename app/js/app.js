@@ -4,9 +4,14 @@
 var app=angular.module('mf-app',['ui.router','ionic']);
 
 app.config(function($stateProvider,$urlRouterProvider){
-    $urlRouterProvider.otherwise('/main');
+    $urlRouterProvider.otherwise('/applyloan');
     $stateProvider.state('main',{
         url:'/main',
-        templateUrl:'views/main.html'
+        templateUrl:'views/main.html',
+        controller:'mainCrl'
+    }).state('applyloan',{
+        url:'/applyloan',
+        templateUrl:'views/applyloan.html',
+        controller:'applyLoanCrl'
     })
 })

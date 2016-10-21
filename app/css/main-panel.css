@@ -1,0 +1,16 @@
+main-panel{
+    width:100%;
+}
+main-panel panel-title{
+    width:100%;height:30px;background-color: #ffffff;display:block;
+}
+main-panel panel-title cube-div{
+    width:6px;height:14px;margin-left:12px;margin-top:8px;background-color: coral;display:block;float:left;
+}
+main-panel panel-title text-div{
+    float:left;line-height: 30px;margin-left:8px;font-size:12px;font-weight:900;
+}
+main-panel panel-bottom{
+    width:100%;height:40px;display:block;text-align: center;line-height: 40px;
+    color:#2196F3;
+}

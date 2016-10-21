@@ -1,24 +1,55 @@
-<div class="main-header">
+<ion-view>
+<div class="main-header mainBGColor">
+    <div style="width:100%;height:20px;display:block;"></div>
     <div class="main-header-title">
-        <div class="main-header-title-icon" id="left">left</div>
+        <div class="main-header-title-icon" id="left">
+            <img style="position: absolute; width:32px;height:32px;display:block;" src="resource/nopage.png" />
+        </div>
         <text>吉客网贷</text>
-        <div class="main-header-title-icon" id="right">right</div>
+        <div class="main-header-title-icon" id="right">
+            <img class="message-img" src="resource/xdico_04.png">
+            <div class="message-tag">10</div>
+        </div>
     </div>
     <div class="main-header-panel">
         <div class="main-header-pane-div">
            <div class="main-header-pane-div-cell">
-                <!--<img ng-src="resource/xdico_01.png/"/>-->
+                <img ng-src="resource/xdico_01.png/"/><span>贷款</span>
            </div>
         </div>
         <div class="main-header-pane-div">
             <div class="main-header-pane-div-cell">
-
+                <img ng-src="resource/xdico_02.png/"/><span>理财</span>
             </div>
         </div>
         <div class="main-header-pane-div">
             <div class="main-header-pane-div-cell">
-
+                <img ng-src="resource/xdico_03.png/"/><span>转账</span>
             </div>
         </div>
     </div>
 </div>
+
+    <ion-scroll  zooming="false" direction="y"  style="width:100%; height: 100%">
+<div style="width:100%">
+    <micro-main-panel-dir panel-title="panelTitle1" panel-desc="panelMoreText1">
+        <micro-main-cell if-show-bg-img="showBGimg" bg-img-path="cell1BGPath" title="data1[0].title" yield="data1[0].yield" yield-bottom="data1[0].yieldBottom" desc="data1[0].desc">
+            <div style="border:solid 1px gray;margin-right:16px;margin-top:10px;;display:block;">
+                <div style="border-bottom: solid 1px gray;text-align: center;">12月期</div>
+                <div>等额本金</div>
+            </div>
+        </micro-main-cell>
+        <micro-main-cell title="data1[1].title" yield="data1[1].yield" yield-bottom="data1[1].yieldBottom" desc="data1[1].desc">
+            <div style="font-size:10px;;width:70px;text-align: center;border:solid 1px gray;margin-right:10px;margin-top:10px;;display:block;">免利息</div>
+        </micro-main-cell>
+        <micro-main-cell if-show-bg-img="showBGimg" bg-img-path="cell2BGPath" title="data1[2].title" yield="data1[2].yield" yield-bottom="data1[2].yieldBottom" desc="data1[2].desc">
+            <div style="font-size:10px;;width:70px;text-align: center;border:solid 1px gray;margin-right:10px;margin-top:10px;;display:block;">免利息</div>
+        </micro-main-cell>
+    </micro-main-panel-dir>
+</div>
+<div style="width:100%;height:10px; display:block;background-color:rgb(240,240,240)"></div>
+<micro-main-panel-dir panel-title="panelTitle2" panel-desc="panelMoreText2">
+</micro-main-panel-dir>
+        <div style="width:100%;height:160px; display:block;"></div>
+    </ion-scroll>
+</ion-view>
