@@ -30,3 +30,12 @@ app.directive('microMainPanelDir',function(){
         templateUrl:'tpls/microMainPanel.html'
     }
 })
+app.directive('myRadioDir',function(){
+    return{
+        restrict:'AE',
+        scope:{
+
+        },
+        templateUrl:'tpls/myRadioDir.html'
+    }
+})

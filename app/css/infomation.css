@@ -1,0 +1,17 @@
+.info-line{
+    width:100%;height:60px;display:block;background-color: #ffffff;border-bottom: solid 1px #dddddd;
+    display:-webkit-flex;
+}
+.info-line .line-text{
+    height:60px;line-height:60px;padding-left:12px;float:left;
+}
+.info-line .line-input{
+    display:flex;
+    -webkit-flex:1;flex:1;
+}
+.info-line .line-input input{
+    margin:12px;width:94%;
+}
+.info-line .line-right{
+    float:right;height: 60px;line-height: 60px;padding-right:12px;
+}

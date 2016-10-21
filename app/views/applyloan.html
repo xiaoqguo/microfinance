@@ -1,6 +1,12 @@
 <ion-view class="grayBGColor">
     <div style="width:100%;height:20px;display:block;background-color: coral;"></div>
-    <div class="header">填写信息</div>
+    <div class="header">
+        <div class="header-left" ng-click="goBackAction()">
+            <div class="ion-ios-arrow-back" style="margin-top:8px;margin-left:4px;;font-size:24px;color:#ffffff;"></div>
+        </div>
+        <div class="header-center">申请贷款</div>
+        <div class="header-right"></div>
+    </div>
     <img class="apply-loan-banner" src="resource/message_banner.jpg">
     <div class="apply-loan-mypapper">
         <paper ng-repeat="paper in papers" ng-style="paper">{{$index+1}}</paper>
@@ -25,6 +31,6 @@
         </ion-slide-box>
     </div>
     <div  class="apply-loan-footer">
-        <div class="normal-button">我要申请</div>
+        <div class="normal-button" ng-click="showInfomation()">我要申请</div>
     </div>
 </ion-view>

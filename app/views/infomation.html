@@ -1,0 +1,82 @@
+<ion-view class="grayBGColor">
+    <div style="width:100%;height:20px;display:block;background-color: coral;"></div>
+    <div class="header">
+        <div class="header-left" ng-click="goBackAction()">
+            <div class="ion-ios-arrow-back" style="margin-top:8px;margin-left:4px;;font-size:24px;color:#ffffff;"></div>
+        </div>
+        <div class="header-center">个人信息</div>
+        <div class="header-right"></div>
+    </div>
+    <div style="padding-left:12px;line-height:40px;;width:100%;height:40px; display:block;background-color:rgb(240,240,240)">
+        请您认真填写，乱填或误填将会影响借款申请！
+    </div>
+    <ion-scroll  zooming="false" direction="y"  style="width:100%; height: 100%">
+        <div class="info-line">
+            <div class="line-text">性别</div>
+        </div>
+
+        <div class="info-line">
+            <div class="line-text">学历</div>
+            <div class="line-input">
+                <input type="text" />
+            </div>
+        </div>
+        <div class="info-line">
+            <div class="line-text">婚姻状况</div>
+        </div>
+        <div class="info-line">
+            <div class="line-text">房产状况</div>
+            <div class="line-input">
+                <input type="text" />
+            </div>
+        </div>
+        <div class="info-line">
+            <div class="line-text">信用卡</div>
+        </div>
+        <div class="info-line">
+            <div class="line-text">职业性质</div>
+            <div class="line-input">
+                <input type="text" />
+            </div>
+        </div>
+        <div class="info-line">
+            <div class="line-text">担任职务</div>
+            <div class="line-input">
+                <input type="text" />
+            </div>
+        </div>
+        <div class="info-line">
+            <div class="line-text">工作城市</div>
+            <div class="line-input">
+                <input type="text" />
+            </div>
+        </div>
+        <div class="info-line">
+            <div class="line-text">工作是否银行代发</div>
+        </div>
+        <div class="info-line">
+            <div class="line-text">年收入</div>
+            <div class="line-input">
+                <input type="text" />
+            </div>
+            <div class="line-right">元</div>
+        </div>
+        <div class="info-line">
+            <div class="line-text">借款用途</div>
+            <div class="line-input">
+                <input type="text" />
+            </div>
+        </div>
+        <div class="info-line">
+            <div class="line-text" >每月可还</div>
+            <div class="line-input">
+                <input placeholder="能够接受的最高还款额度" type="text" />
+            </div>
+            <div class="line-right">元</div>
+        </div>
+        <div style="width:100%;height:160px; display:block;"></div>
+    </ion-scroll>
+    <div class="bar bar-footer" style="height:60px;">
+        <div style="margin-top:8px;" class="normal-button">确认提交</div>
+    </div>
+</ion-view>
