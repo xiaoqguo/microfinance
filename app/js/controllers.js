@@ -12,5 +12,13 @@ app.controller('mainCrl',function($scope){
     $scope.panelMoreText2='更多产品敬请期待';
 });
 app.controller('applyLoanCrl',function($scope){
+    $scope.sexItems=['男','女','中','其'];
+    $scope.showSelectAction=function(){
+        alert($scope.sexSInd);
+    }
+    //$scope.selectSexAction=function(index){
+    //    alert(10+index);
+    //}
+    //$scope.sexSInd=1;
 
 })
